@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for our lead management service, its web application and its browser extension.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f7f9;
+      --text: #1d2330;
+      --muted: #5b6475;
+      --border: #e2e5eb;
+      --accent: #2557c5;
+      --todo-bg: #fff4c2;
+      --todo-text: #6b4e00;
+      --todo-border: #e8c84a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12151b;
+        --surface: #1a1f27;
+        --text: #e6e9ef;
+        --muted: #a0a8b8;
+        --border: #2b313c;
+        --accent: #7ea6ff;
+        --todo-bg: #3a3112;
+        --todo-text: #ffe39a;
+        --todo-border: #8a7322;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+    header.site {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    header.site .wrap { padding-top: 40px; padding-bottom: 28px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; margin: 0 0 8px; }
+    .meta { color: var(--muted); margin: 0; }
+    .notice {
+      margin: 24px 0 0;
+      padding: 14px 16px;
+      border: 1px solid var(--todo-border);
+      background: var(--todo-bg);
+      color: var(--todo-text);
+      border-radius: 8px;
+      font-size: .95rem;
+    }
+    nav.toc {
+      margin: 32px 0;
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+    nav.toc h2 { font-size: 1rem; margin: 0 0 8px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+    nav.toc ol { margin: 0; padding-left: 1.3em; columns: 2; column-gap: 32px; }
+    nav.toc li { break-inside: avoid; margin: 2px 0; }
+    @media (max-width: 640px) { nav.toc ol { columns: 1; } }
+    main section { padding-top: 8px; }
+    h2 { font-size: 1.4rem; margin: 40px 0 12px; line-height: 1.3; scroll-margin-top: 16px; }
+    h3 { font-size: 1.08rem; margin: 24px 0 8px; }
+    p, ul, ol { margin: 0 0 14px; }
+    li { margin: 4px 0; }
+    .table-scroll { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--border); border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: .95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    th { background: var(--surface); font-weight: 600; }
+    tr:last-child td { border-bottom: 0; }
+    .todo {
+      background: var(--todo-bg);
+      color: var(--todo-text);
+      border: 1px dashed var(--todo-border);
+      border-radius: 4px;
+      padding: 0 4px;
+      font-weight: 600;
+    }
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: var(--surface);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 0 0 16px;
+    }
+    footer.site {
+      margin-top: 56px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    footer.site .wrap { padding-top: 20px; padding-bottom: 40px; }
+    @media print {
+      .notice, nav.toc { display: none; }
+      body { font-size: 11pt; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        <span class="todo">[REVIEW: Product name]</span> · Effective date:
+        <span class="todo">[REVIEW: Effective date]</span> · Last updated:
+        <span class="todo">[REVIEW: Last updated date]</span>
+      </p>
+      <!-- REVIEW BANNER: remove this block (and all .todo markers) before publishing. -->
+      <div class="notice" role="note">
+        <strong>Draft for review.</strong> The highlighted items such as
+        <span class="todo">[REVIEW: …]</span> show legal or business information that we could not fill in.
+        Complete or remove them, and have the text checked by qualified legal counsel before publishing.
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#who-we-are">Who we are</a></li>
+        <li><a href="#scope">Scope of this policy</a></li>
+        <li><a href="#linkedin">Relationship with LinkedIn</a></li>
+        <li><a href="#data-we-collect">Data we collect</a></li>
+        <li><a href="#how-we-use">How we use data</a></li>
+        <li><a href="#ai">AI lead scoring and message assistance</a></li>
+        <li><a href="#linkedin-processing">LinkedIn-related processing</a></li>
+        <li><a href="#legal-bases">Legal bases</a></li>
+        <li><a href="#third-parties">Third-party services</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#security">Data security</a></li>
+        <li><a href="#retention">Data retention</a></li>
+        <li><a href="#deletion">Deletion requests</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#prospects">Information for people in our customers' lead lists</a></li>
+        <li><a href="#cookies">Cookies and local storage</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="who-we-are">
+        <h2>1. Who we are</h2>
+        <p>
+          <span class="todo">[REVIEW: Product name]</span> (the “Service”) is a lead management application for sales teams.
+          It is provided by <span class="todo">[REVIEW: Legal entity name]</span>, registered at
+          <span class="todo">[REVIEW: Registered address]</span>, company registration number
+          <span class="todo">[REVIEW: Registration number, if applicable]</span> (“we”, “us”, “our”).
+        </p>
+        <p>The Service has three parts:</p>
+        <ul>
+          <li>a <strong>web application</strong>, where organizations manage campaigns, leads, messages and replies;</li>
+          <li>a <strong>Chrome browser extension</strong> that works on LinkedIn pages in the user's own browser;</li>
+          <li>a <strong>backend</strong> that stores the data and runs AI and email features.</li>
+        </ul>
+      </section>
+
+      <section id="scope">
+        <h2>2. Scope of this policy</h2>
+        <p>This policy explains how we process personal data about:</p>
+        <ul>
+          <li><strong>Users:</strong> the people who sign in to the Service on behalf of an organization (our customer);</li>
+          <li><strong>Prospects:</strong> the people whose professional profile information users add to their organization's lead lists.</li>
+        </ul>
+        <p>
+          For prospect data, the customer organization decides which people to collect and contact, and why.
+          In most cases the customer is therefore the <em>controller</em> of that data and we act as its <em>processor</em>.
+          For account and usage data about our users, we are the controller.
+          <span class="todo">[REVIEW: Confirm the controller/processor roles with counsel, and whether a Data Processing Agreement (DPA) is offered to customers.]</span>
+        </p>
+      </section>
+
+      <section id="linkedin">
+        <h2>3. Relationship with LinkedIn</h2>
+        <div class="callout">
+          The Service is an independent product. It is <strong>not affiliated with, endorsed by, sponsored by or
+          partnered with LinkedIn Corporation</strong>. “LinkedIn” is a trademark of LinkedIn Corporation and is used
+          here only to describe the website the extension works with.
+        </div>
+        <p>
+          Users are responsible for using LinkedIn in line with LinkedIn's own User Agreement and policies.
+          Some automated activity on LinkedIn may be restricted by those terms.
+          <span class="todo">[REVIEW: Counsel to confirm the wording on LinkedIn terms and user responsibility.]</span>
+        </p>
+      </section>
+
+      <section id="data-we-collect">
+        <h2>4. Data we collect</h2>
+
+        <h3>4.1 Account and organization data (users)</h3>
+        <ul>
+          <li>Name, email address and password for signing in. Passwords are managed by our authentication provider and are stored only in hashed form.</li>
+          <li>Organization name, membership and role (for example admin or member), and license status.</li>
+          <li>
+            Registered browser extension installations: a hashed installation identifier, a label, activation date,
+            last-seen time and revocation status.
+          </li>
+          <li>
+            Sending settings for a connected LinkedIn sender:
+            <ul>
+              <li>display name;</li>
+              <li>daily send limit and minimum interval between messages;</li>
+              <li>whether automatic sending, automatic start and reply checking are turned on;</li>
+              <li>time of last send and the last error.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>4.2 Lead (prospect) data</h3>
+        <p>
+          When a user chooses to import results from a LinkedIn or Sales Navigator search page, the extension reads the
+          information shown on that page and sends it to the user's organization in the Service:
+        </p>
+        <ul>
+          <li>profile URL and profile type (public profile or Sales Navigator lead);</li>
+          <li>first, last and full name;</li>
+          <li>job title, company, location and headline, if shown;</li>
+          <li>connection degree (for example 1st, 2nd or 3rd+);</li>
+          <li>source, import batch, and collection and update times.</li>
+        </ul>
+        <p>
+          We do not collect email addresses, phone numbers, private messages unrelated to a campaign, connection lists,
+          or any information that is not shown on the page the user imports from.
+        </p>
+
+        <h3>4.3 Campaign and outreach data</h3>
+        <ul>
+          <li>Campaign settings, such as target titles, industries, company sizes, locations and message templates.</li>
+          <li>The leads included in each campaign and whether they are selected.</li>
+          <li>Outreach status, queue state, send attempts, timestamps and error codes.</li>
+          <li>The text of outreach messages created or approved by users.</li>
+        </ul>
+
+        <h3>4.4 Reply and notification data</h3>
+        <ul>
+          <li>
+            If a user turns on reply checking, the extension reads the LinkedIn conversations with leads in the user's
+            campaigns. It stores the message text, its direction (sent or received), its time and a message identifier.
+          </li>
+          <li>The AI classification of each reply (for example interested, not interested or out of office) and its reasoning.</li>
+          <li>Email notifications sent to users about replies: recipient, subject, content and delivery status.</li>
+        </ul>
+
+        <h3>4.5 Technical data</h3>
+        <ul>
+          <li>Server logs: request times, error details and the identifiers needed to operate and secure the Service.</li>
+          <li>Diagnostic page-structure snapshots, only if a user chooses to copy one and send it to support.</li>
+        </ul>
+        <p>
+          We do not use advertising trackers or third-party analytics in the web application or the extension.
+          <span class="todo">[REVIEW: Update this if analytics or error monitoring is added later.]</span>
+        </p>
+
+        <h3>4.6 What we never collect</h3>
+        <ul>
+          <li>LinkedIn passwords.</li>
+          <li>LinkedIn session cookies or login tokens. The extension relies on the user's existing LinkedIn session in their own browser and never sends it to us.</li>
+          <li>Payment card details. <span class="todo">[REVIEW: If billing is added, name the payment processor here.]</span></li>
+        </ul>
+      </section>
+
+      <section id="how-we-use">
+        <h2>5. How we use data</h2>
+        <ul>
+          <li>To provide the Service: store leads, organize campaigns, prepare and queue messages, and show replies.</li>
+          <li>To send LinkedIn messages from the user's own account, as the user has configured (see section 7).</li>
+          <li>To score leads against a campaign's target profile and to help draft messages (see section 6).</li>
+          <li>To detect replies, classify them and notify the right users by email.</li>
+          <li>To enforce the sending limits and pacing that users set, and to prevent duplicate messages.</li>
+          <li>To secure the Service: authenticate users and devices, keep organizations' data separate, and prevent abuse.</li>
+          <li>To provide support and to communicate important changes to the Service.</li>
+        </ul>
+        <p>We do not sell personal data and we do not use it for advertising.</p>
+      </section>
+
+      <section id="ai">
+        <h2>6. AI lead scoring and message assistance</h2>
+        <p>The Service uses a third-party AI model provider (see section 9) for three tasks:</p>
+        <ul>
+          <li>
+            <strong>Lead scoring.</strong> A lead's name, job title, company, location and headline are compared with
+            the campaign's target criteria. The result is a score, a match level and a short reason.
+          </li>
+          <li>
+            <strong>Message assistance.</strong> The model may lightly adapt a message template written by the user,
+            using only the lead's profile fields. It is instructed not to invent facts about the person.
+          </li>
+          <li>
+            <strong>Reply classification.</strong> The text of a lead's reply, together with the lead's name, title and
+            company, is classified (for example interested or out of office) so that users can prioritize follow-ups.
+          </li>
+        </ul>
+        <p>
+          AI results support the user's decisions. They do not make decisions with legal or similarly significant
+          effects. Users review leads and approve messages, or switch automatic sending on themselves. AI output can be
+          wrong and should be checked.
+        </p>
+        <p>
+          <span class="todo">[REVIEW: Confirm from the AI provider's current terms for your plan whether submitted data is used to train their models, and how long they keep it.]</span>
+        </p>
+      </section>
+
+      <section id="linkedin-processing">
+        <h2>7. LinkedIn-related processing</h2>
+        <p>The browser extension runs only on <code>https://www.linkedin.com/*</code>, inside the user's own browser, and only while the user is signed in to LinkedIn. It:</p>
+        <ul>
+          <li>reads lead information from search results <strong>when the user starts an import</strong>;</li>
+          <li>
+            opens lead profiles or messaging pages to send campaign messages. Depending on the user's settings, the
+            user either reviews and sends each message, or allows automatic sending within the limits they set;
+          </li>
+          <li>reads conversations with campaign leads to detect replies, <strong>only if the user turns on reply checking</strong>;</li>
+          <li>saves its working state locally in the browser (see section 16).</li>
+        </ul>
+        <p>
+          The extension does not bypass CAPTCHAs or security checks, does not disguise automated activity, and does not
+          use non-public LinkedIn interfaces. If LinkedIn asks the user to sign in or verify their account, outreach stops
+          until the user deals with it.
+        </p>
+        <p>
+          <span class="todo">[REVIEW: An optional third-party LinkedIn messaging integration (Unipile) exists in the code but is currently disabled. If it is enabled, describe it here and in section 9.]</span>
+        </p>
+      </section>
+
+      <section id="legal-bases">
+        <h2>8. Legal bases (EEA, UK and similar laws)</h2>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
+            <tbody>
+              <tr><td>Providing the Service to users and organizations</td><td>Performance of a contract</td></tr>
+              <tr><td>Security, abuse prevention and service logs</td><td>Legitimate interests</td></tr>
+              <tr><td>Processing prospect data for B2B outreach</td><td>The customer's legitimate interests (the customer is the controller) <span class="todo">[REVIEW]</span></td></tr>
+              <tr><td>Meeting legal obligations</td><td>Legal obligation</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><span class="todo">[REVIEW: Counsel to confirm the legal bases and add any jurisdiction-specific wording, for example KVKK (Türkiye), UK GDPR or CCPA/CPRA.]</span></p>
+      </section>
+
+      <section id="third-parties">
+        <h2>9. Third-party services</h2>
+        <p>We use the following service providers (sub-processors). They process data only to provide their services to us.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Supabase</td>
+                <td>Database, authentication, server functions and hosting</td>
+                <td>All Service data described in section 4</td>
+              </tr>
+              <tr>
+                <td>Google (Gemini API)</td>
+                <td>AI lead scoring, message assistance and reply classification</td>
+                <td>Lead profile fields, campaign criteria, message templates and reply text</td>
+              </tr>
+              <tr>
+                <td>Anthropic (Claude API), only if configured</td>
+                <td>Alternative AI provider for the same tasks</td>
+                <td>Same as above</td>
+              </tr>
+              <tr>
+                <td>Resend</td>
+                <td>Email notifications to users</td>
+                <td>User email address, notification subject and content (including a lead's name and reply summary)</td>
+              </tr>
+              <tr>
+                <td>Google Chrome Web Store</td>
+                <td>Distributing the browser extension</td>
+                <td>Governed by Google's own policies</td>
+              </tr>
+              <tr>
+                <td>GitHub Pages</td>
+                <td>Hosting this policy page</td>
+                <td>Standard web server logs collected by GitHub</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <span class="todo">[REVIEW: Confirm the final provider list, hosting regions and plans before launch, and link each provider's privacy policy or DPA.]</span>
+        </p>
+        <p>We may also disclose data if the law requires it, or to protect our rights, our users or the public.</p>
+      </section>
+
+      <section id="transfers">
+        <h2>10. International transfers</h2>
+        <p>
+          Our providers may process data outside your country. Where required, we rely on appropriate safeguards such as
+          the European Commission's Standard Contractual Clauses.
+          <span class="todo">[REVIEW: State the data hosting region and the transfer mechanisms actually in place.]</span>
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>11. Data security</h2>
+        <ul>
+          <li><strong>Organization isolation:</strong> database row-level security keeps each organization's data separate. Organization membership is checked on the server and is never taken from the browser.</li>
+          <li><strong>Encryption in transit:</strong> all traffic to the Service uses HTTPS/TLS.</li>
+          <li><strong>Hosting:</strong> data is stored with our hosting provider. <span class="todo">[REVIEW: Confirm encryption at rest and backup settings for your hosting plan.]</span></li>
+          <li><strong>Device registration:</strong> each browser extension must be activated for a user and can be revoked.</li>
+          <li><strong>Minimal credentials:</strong> no LinkedIn passwords or session cookies are sent to or stored by us. AI and email API keys are kept only on the server.</li>
+          <li><strong>Safe sending:</strong> server-side limits, pacing and safeguards against sending the same message twice.</li>
+          <li><strong>Access:</strong> only authorized personnel can access production data, and only when needed. <span class="todo">[REVIEW: Describe your access controls.]</span></li>
+        </ul>
+        <p>
+          No system is completely secure. If a data breach affects you, we will notify you and the relevant authorities as
+          the law requires. <span class="todo">[REVIEW: Breach notification process and timeline.]</span>
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>12. Data retention</h2>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Data</th><th>Retention</th></tr></thead>
+            <tbody>
+              <tr><td>Account and organization data</td><td>While the account is active, then <span class="todo">[REVIEW: period]</span> after closure</td></tr>
+              <tr><td>Leads and campaigns</td><td>Until the organization deletes them, or the organization's account is deleted</td></tr>
+              <tr><td>Outreach history, messages and replies</td><td>While the related campaign or lead exists <span class="todo">[REVIEW: maximum period]</span></td></tr>
+              <tr><td>Email notification records</td><td><span class="todo">[REVIEW: period]</span></td></tr>
+              <tr><td>Server logs</td><td><span class="todo">[REVIEW: period, depending on hosting provider settings]</span></td></tr>
+              <tr><td>Backups</td><td><span class="todo">[REVIEW: backup retention period]</span></td></tr>
+              <tr><td>Data stored in the extension (in the browser)</td><td>Until the user signs out, clears it or removes the extension</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          When a lead has already been contacted, has replied or is marked “do not contact”, the application protects it
+          from routine deletion. This keeps it from being contacted again by mistake. Such records can still be deleted on
+          a verified request (section 13).
+        </p>
+      </section>
+
+      <section id="deletion">
+        <h2>13. Deletion requests</h2>
+        <ul>
+          <li><strong>Users and organizations:</strong> remove leads from campaigns or delete them in the web application. To close an account or delete an organization's data, contact us (section 19).</li>
+          <li>
+            <strong>Prospects:</strong> to have your data deleted from a customer's lead list, contact that customer
+            directly, or contact us and we will pass the request on or handle it as the law requires.
+          </li>
+          <li><strong>Extension:</strong> removing the extension from Chrome deletes the data it stores in the browser.</li>
+        </ul>
+        <p>
+          We will respond within <span class="todo">[REVIEW: e.g. 30 days]</span>. We may need to verify your identity
+          first. Deleted data is removed from backups within <span class="todo">[REVIEW: period]</span>.
+        </p>
+      </section>
+
+      <section id="rights">
+        <h2>14. Your rights</h2>
+        <p>Depending on where you live, you may have the right to:</p>
+        <ul>
+          <li>access the personal data we hold about you;</li>
+          <li>correct inaccurate data;</li>
+          <li>have your data deleted;</li>
+          <li>restrict or object to processing, including processing based on legitimate interests and direct marketing;</li>
+          <li>receive your data in a portable format;</li>
+          <li>withdraw consent, where processing is based on consent;</li>
+          <li>complain to a data protection authority.</li>
+        </ul>
+        <p>
+          To use these rights, contact us (section 19). If we process your data for a customer, we will forward your
+          request to that customer and help them respond.
+        </p>
+        <p><span class="todo">[REVIEW: Add the competent supervisory authority, an EU/UK representative if required, and any state-specific (e.g. California) disclosures.]</span></p>
+      </section>
+
+      <section id="prospects">
+        <h2>15. Information for people in our customers' lead lists</h2>
+        <p>
+          If you received a LinkedIn message from one of our customers, your public professional information (name, title,
+          company, location, headline and profile URL) was added to that customer's lead list from LinkedIn search results.
+          This was done by a user of that organization. The customer may have used AI to judge how well your profile fits
+          its campaign, and may store your replies to its messages.
+        </p>
+        <p>
+          You can object to this processing or ask for deletion at any time. Reply to the sender with a request not to be
+          contacted again, contact the sender's organization, or contact us (section 19).
+        </p>
+      </section>
+
+      <section id="cookies">
+        <h2>16. Cookies and local storage</h2>
+        <ul>
+          <li><strong>Web application:</strong> uses the browser's local storage for the sign-in session and small preferences (for example the last selected campaign). It does not use advertising or tracking cookies.</li>
+          <li><strong>Browser extension:</strong> uses Chrome extension storage for the sign-in session, the selected campaign, imported leads that have not been sent yet, outreach state and short diagnostic logs.</li>
+          <li><strong>This page:</strong> hosted on GitHub Pages and sets no cookies of its own.</li>
+        </ul>
+      </section>
+
+      <section id="children">
+        <h2>17. Children</h2>
+        <p>
+          The Service is a business tool and is not intended for anyone under
+          <span class="todo">[REVIEW: minimum age, e.g. 16 or 18]</span>. We do not knowingly collect children's data.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>18. Changes to this policy</h2>
+        <p>
+          We may update this policy. We will change the “Last updated” date above and, for significant changes, notify users
+          in the application or by email before the changes take effect.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>19. Contact</h2>
+        <p>For privacy questions or requests, contact:</p>
+        <ul>
+          <li><strong>Company:</strong> <span class="todo">[REVIEW: Legal entity name]</span></li>
+          <li><strong>Address:</strong> <span class="todo">[REVIEW: Postal address]</span></li>
+          <li><strong>Email:</strong> <span class="todo">[REVIEW: privacy@your-domain]</span></li>
+          <li><strong>Data Protection Officer:</strong> <span class="todo">[REVIEW: DPO name and contact, if one is appointed]</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© <span class="todo">[REVIEW: Year and legal entity name]</span>. Not affiliated with or endorsed by LinkedIn Corporation.</p>
+    </div>
+  </footer>
+</body>
+</html>
